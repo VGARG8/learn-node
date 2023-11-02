@@ -52,6 +52,8 @@ For example, consider the code in "operations/syncdelete.js".
 
 1. Identify and fix the runtime error in "operations/syncdelete.js".
 
+If the two things are linked together its better to have them in one block or else there will be race condition. Fixed.
+
 # Event Loop
 
 When *setTimeout(callback, ms)* invoked, Node puts a *callback* in the timer phase's queue. The Node runtime executes it after a threshold time as specified in the *ms* argument.
