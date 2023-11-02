@@ -61,6 +61,8 @@ When *setTimeout(callback, ms)* invoked, Node puts a *callback* in the timer pha
 **For you to do**:
 
 1. In "eventloop/timer.js", what will be the order of execution?
+whatever is a part of mainscript gets printed and whatever is added in the settimer will be in the waiting timer phase  queue and
+execute in FIFO
 
 2. How many callbacks will the timers phase queue have after the script is run? 
 
